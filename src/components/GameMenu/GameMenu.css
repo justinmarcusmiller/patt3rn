@@ -1,0 +1,33 @@
+#gameMenu {
+  height: 100%;
+  width: 100%;
+}
+
+#gameMenu ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+#gameMenu ul li button{
+  background-color: #FFFFFF;
+  border: none;
+  padding: 25px 50px;
+  border-radius: 0;
+  font-size: 50px;
+  font-weight: 700;
+  color: #3BB99B;
+  transition: all ease-in-out .2s;
+}
+
+#gameMenu ul li button:hover{
+  box-shadow: 0px 0px 16px #3BB99B;
+  background-color: #3BB99B;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,13 @@
+#gameTitle {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+#gameTitle h1 {
+  font-size: 100px;
+  color: transparent;
+  -webkit-text-stroke: 6px #3BB99B;
+}

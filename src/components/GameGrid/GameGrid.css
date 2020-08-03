@@ -1,0 +1,30 @@
+#gameGrid {
+  display: grid;
+  gap: 65px;
+  justify-items: center;
+  justify-content: center;
+}
+
+#red {
+  background-color: red;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#white {
+  background-color: white;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#light-blue {
+  background-color: turquoise;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#green {
+  background-color: green;
+  grid-column: 2;
+  grid-row: 2;
+}
