@@ -3,8 +3,7 @@ import './GameSquare.css';
 
 function GameSquare(props) {
   return (
-  <div class="square" id={props.squareColor}>
-    <p>{props.squareColor}</p>
+  <div className={props.squareColor + " square"} id={props.index}>
   </div>
   );
 }

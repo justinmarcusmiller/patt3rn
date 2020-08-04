@@ -1,30 +1,81 @@
 #gameGrid {
   display: grid;
-  gap: 65px;
+  gap: 20px;
   justify-items: center;
   justify-content: center;
 }
 
-#red {
+.red {
   background-color: red;
   grid-column: 1;
   grid-row: 1;
 }
 
-#white {
+.white {
   background-color: white;
   grid-column: 2;
   grid-row: 1;
 }
 
-#light-blue {
+.blue {
+  background-color: blue;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.light-blue {
   background-color: turquoise;
   grid-column: 1;
   grid-row: 2;
 }
 
-#green {
+.green {
   background-color: green;
   grid-column: 2;
   grid-row: 2;
+}
+
+.purple {
+  background-color: purple;
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.yellow {
+  background-color: yellow;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.gray {
+  background-color: gray;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.orange {
+  background-color: orange;
+  grid-column: 3;
+  grid-row: 3;
+}
+
+#start-btn {
+  position: absolute;
+  bottom: 15px;
+  margin-left: 25px;
+  background-color: #FFFFFF;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 0;
+  font-size: 25px;
+  font-weight: 700;
+  color: #3BB99B;
+  transition: all ease-in-out .2s;
+}
+
+#start-btn:hover {
+  box-shadow: 0px 0px 16px #3BB99B;
+  background-color: #3BB99B;
+  color: white;
+  cursor: pointer;
 }
