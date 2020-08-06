@@ -31,13 +31,13 @@ function GameDisplay() {
   } else if (gameState === "Medium") {
     return (
       <div id="gameDisplay">
-        <GameGrid difficulty={6} onChange={handleGameStateChange} pointsChange={pointsChange}/>
+        <GameGrid difficulty={6} changeState={handleGameStateChange} pointsChange={pointsChange}/>
       </div>
     );
   } else if (gameState === "Hard") {
     return (
       <div id="gameDisplay">
-        <GameGrid difficulty={8} onChange={handleGameStateChange} pointsChange={pointsChange}/>
+        <GameGrid difficulty={8} changeState={handleGameStateChange} pointsChange={pointsChange}/>
       </div>
     );
   } else if (gameState === "Results"){

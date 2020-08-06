@@ -60,9 +60,6 @@
 }
 
 #start-btn {
-  position: absolute;
-  bottom: 15px;
-  margin-left: 25px;
   background-color: #FFFFFF;
   border: none;
   padding: 20px 30px;
@@ -71,6 +68,7 @@
   font-weight: 700;
   color: #3BB99B;
   transition: all ease-in-out .2s;
+  grid-column: 4 / -1;
 }
 
 #start-btn:hover {

@@ -17,3 +17,8 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+button:focus {
+  outline: none;
+  border: none;
+}

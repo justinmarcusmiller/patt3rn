@@ -1,6 +1,16 @@
 .square {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border: none;
   border-radius: 0;
+}
+
+.square:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 16px #3BB99B;
+}
+
+.square[disabled] {
+  cursor: unset;
+  box-shadow: none;
 }
