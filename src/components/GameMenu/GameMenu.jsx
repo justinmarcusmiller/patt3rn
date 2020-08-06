@@ -7,13 +7,13 @@ function GameMenu(props) {
     <div id="gameMenu">
       <ul>
         <li>
-          <button onClick={() => props.onChange('easy')}>Easy</button>
+          <button onClick={() => props.onChange("Easy")}>Easy</button>
         </li>
         <li>
-          <button onClick={() => props.onChange('medium')}>Medium</button>
+          <button onClick={() => props.onChange(6)}>Medium</button>
         </li>
         <li>
-          <button onClick={() => props.onChange('hard')}>Hard</button>
+          <button onClick={() => props.onChange(8)}>Hard</button>
         </li>
       </ul>
     </div>

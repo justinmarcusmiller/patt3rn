@@ -1,10 +1,16 @@
 import React from 'react';
 import './GameSquare.css';
 
+
+
 function GameSquare(props) {
+  function handleClick(square) {
+    props.handleSquareSelect(square)
+  }
+  
   return (
-  <div className={props.squareColor + " square"} id={props.index}>
-  </div>
+  <button disabled={props.playersTurn === 'false'} onClick={() => handleClick(props.index)} className={props.squareColor + " square"} id={props.index}>
+  </button>
   );
 }
 
