@@ -49,19 +49,19 @@ function GameGrid(props) {
   // Show pattern on squares
   async function showPattern(array) {
     for (let i = 0; i < array.length; i++) {
-      await sleep(1000)
+      await sleep(500)
         //Light up square;
         .then(() => {
           document.getElementById(array[i]).style.opacity = "0.5";
         })
         //Wait
-        .then(() => sleep(1000))
+        .then(() => sleep(500))
         //Unlight square
         .then(() => {
           document.getElementById(array[i]).style.opacity = "1";
         });
     }
-    await sleep(1000)
+    await sleep(500)
       .then(() => {
         alert("Player's Turn!");
         setPattern(array);
@@ -84,9 +84,10 @@ function GameGrid(props) {
       // Cpu turn
       setPlayersTurn("false");
       setTurn("cpu");
+      alert("You Lost")
       props.pointsChange(points);
-      props.changeState("Results");
       // Show score
+      props.changeState("Results");
     }
 
     if (patternPos === pattern.length) {
