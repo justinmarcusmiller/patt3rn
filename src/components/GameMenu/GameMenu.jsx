@@ -10,10 +10,10 @@ function GameMenu(props) {
           <button onClick={() => props.onChange("Easy")}>Easy</button>
         </li>
         <li>
-          <button onClick={() => props.onChange(6)}>Medium</button>
+          <button onClick={() => props.onChange("Medium")}>Medium</button>
         </li>
         <li>
-          <button onClick={() => props.onChange(8)}>Hard</button>
+          <button onClick={() => props.onChange("Hard")}>Hard</button>
         </li>
       </ul>
     </div>
