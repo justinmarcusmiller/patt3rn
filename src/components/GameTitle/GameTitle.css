@@ -9,6 +9,11 @@
 
 #gameTitle h1 {
   font-size: 100px;
-  color: transparent;
+  color: #333;
   -webkit-text-stroke: 6px #3BB99B;
+  text-shadow:
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #3BB99B,
+    0 0 60px #3BB99B;
 }
