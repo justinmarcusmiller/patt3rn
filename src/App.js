@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './index.css';
 import GameTitle from './components/GameTitle/GameTitle.jsx';
 import GameDisplay from './components/GameDisplay/GameDisplay.jsx';

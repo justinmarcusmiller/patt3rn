@@ -7,13 +7,13 @@ import { useState } from "react";
 function GameGrid(props) {
   const [gridLayout, setGridLayout] = useState([]);
   const [pattern, setPattern] = useState([]);
-  const [turn, setTurn] = useState("cpu");
   const [playersTurn, setPlayersTurn] = useState("false");
   let [patternPos, setPatternPos] = useState(0);
   let [points, setPoints] = useState(0);
   let [turnNumber, setTurnNumber] = useState(0);
 
   useEffect(() => {
+    console.warn("Re-Rendering GameGrid")
     if (props.difficulty === 4) {
       setGridLayout(["red", "white", "light-blue", "green"]);
     } else if (props.difficulty === 6) {
@@ -30,8 +30,10 @@ function GameGrid(props) {
         "gray",
         "orange",
       ]);
+    } else {
+      console.error("Invalid Difficulty")
     }
-  }, []);
+  }, [props.difficulty]);
 
   function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
@@ -71,7 +73,6 @@ function GameGrid(props) {
 
   function playerTurn() {
     setPatternPos(0);
-    setTurn("player");
     setPlayersTurn("true");
   }
 
@@ -83,7 +84,6 @@ function GameGrid(props) {
       setPatternPos(0);
       // Cpu turn
       setPlayersTurn("false");
-      setTurn("cpu");
       alert("You Lost")
       props.pointsChange(points);
       // Show score
@@ -97,7 +97,6 @@ function GameGrid(props) {
       setPatternPos(0);
       // Cpu turn
       setPlayersTurn("false");
-      setTurn("cpu");
       alert("Computer's Turn");
       genPattern();
     }

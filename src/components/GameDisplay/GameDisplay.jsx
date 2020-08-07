@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./GameDisplay.css";
 import GameMenu from "../GameMenu/GameMenu.jsx";
 import GameGrid from "../GameGrid/GameGrid.jsx";
