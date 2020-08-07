@@ -5,24 +5,24 @@
 }
 
 #gameResults h2 {
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 700;
-  margin-bottom: 60px;
-  margin-top: 150px;
+  margin-bottom: 6rem;
+  margin-top: 15rem;
 }
 
 #gameResults button {
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 700;
   border-radius: 0;
   background-color: #fff;
   color: #3BB99B;
   border: 0;
-  padding: 20px 30px;
+  padding: 2rem 3rem;
 }
 
 #gameResults button:hover {
-  box-shadow: 0px 0px 16px #3BB99B;
+  box-shadow: 0 0 1.6rem #3BB99B;
   background-color: #3BB99B;
   color: white;
   cursor: pointer;

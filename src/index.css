@@ -5,6 +5,10 @@
   transition: all ease-in-out .2s;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
