@@ -8,6 +8,7 @@ function GameGrid(props) {
   const [gridLayout, setGridLayout] = useState([]);
   const [pattern, setPattern] = useState([]);
   const [playersTurn, setPlayersTurn] = useState("false");
+  const [startBtnClickable, setStartBtnClickable] = useState("true");
   let [patternPos, setPatternPos] = useState(0);
   let [points, setPoints] = useState(0);
   let [turnNumber, setTurnNumber] = useState(0);
@@ -41,6 +42,7 @@ function GameGrid(props) {
 
   // Generate pattern for player to follow
   function genPattern() {
+    setStartBtnClickable("false");
     setTurnNumber((turnNumber += 1));
     let a = pattern; // set to value of pattern?
     a.push(Math.floor(Math.random() * props.difficulty));
@@ -115,7 +117,7 @@ function GameGrid(props) {
           />
         );
       })}
-      <button id="start-btn" onClick={() => genPattern()}>
+      <button disabled={startBtnClickable === "false"} id="start-btn" onClick={() => genPattern()}>
         Start Game
       </button>
     </div>
