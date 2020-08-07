@@ -1,9 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PATT3RN
+### A Pattern matching game
 
 ## TODO:
 
-- Add neon effect to logo
 - Add sounds
 - Add effect on button click
-- Improve UI
+- Replace alerts
 - Clean up code
