@@ -26,3 +26,39 @@ button:focus {
   outline: none;
   border: none;
 }
+
+@media only screen and (max-width: 675px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media only screen and (max-width: 225px) {
+  html {
+    font-size: 4px;
+  }
+}
